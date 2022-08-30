@@ -12,6 +12,10 @@ input[type="button"]
     height: 80px;
     color: white;
 }
+#size{
+    font-size: 50px;
+    font-weight: bold;
+}
 input[type="text"]
 {
     border: 10px;
