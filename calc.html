@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Calc</title> <!--Title of the Webpage-->
+        <link rel="Icon" href="calcicon.jpg"/> <!--Icon of Webpage-->
+        <link rel="stylesheet" href="calc.css"> <!--Linking External CSS-->
+        <script src="calc.js"> </script> <!--Linking External JavaScript-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> <!--Linking External BootStrap4-->
+    </head>
+    <body>
+        <!--Navbar of Webpage-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+            <a class="navbar-brand" href="#">Developer Tohid</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!--End of Navbar-->
+
+        <!--calc container-->
+        <div class="container"> 
+            <div class="panel-body"> 
+                <table class="table table-bordered table-hover">
+                    <thead><!-- clr() function will call clr to clear all value -->
+                        <tr>
+                            <td><input type="button" value="c" class="btn btn-danger" onclick="clr()"/></td>
+                                <td colspan="3"><input type="text" id="start"/></td>
+                            </tr>
+                    </thead>
+
+                    <!--buttons and assigning values-->
+                    <tbody>
+                        
+                        <tr>
+                            <td><input type="button" value="+" class="btn btn-warning" onclick="dis('+')"/></td>
+                            <td><input type="button" value="1" class="btn btn-dark" onclick="dis('1')"/></td>
+                            <td><input type="button" value="2" class="btn btn-dark" onclick="dis('2')"/></td>
+                            <td><input type="button" value="3" class="btn btn-dark" onclick="dis('3')"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" value="-" class="btn btn-warning" onclick="dis('-')"/></td>
+                            <td><input type="button" value="4" class="btn btn-dark" onclick="dis('4')"/></td>
+                            <td><input type="button" value="5" class="btn btn-dark" onclick="dis('5')"/></td>
+                            <td><input type="button" value="6" class="btn btn-dark" onclick="dis('6')"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" value="x" class="btn btn-warning" onclick="dis('*')"/></td>
+                            <td><input type="button" value="7" class="btn btn-dark" onclick="dis('7')"/></td>
+                            <td><input type="button" value="8" class="btn btn-dark" onclick="dis('8')"/></td>
+                            <td><input type="button" value="9" class="btn btn-dark" onclick="dis('9')"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" value="÷" class="btn btn-warning"  onclick="dis('/')"/></td>
+                            <td><input type="button" value="." class="btn btn-dark" onclick="dis('.')"/></td>
+                            <td><input type="button" value="0" class="btn btn-dark" onclick="dis('0')"/></td>
+                            <td><input type="button" class="btn btn-success" value="=" onclick="solve()"/></td>
+                        </tr>
+                        
+                    </tbody>
+                    <!-- End of  buttons and assigning values-->  
+                </table>
+            </div>
+        </div>
+        <!--End of container-->
+
+        <!--webpage footer-->
+        <footer> 
+            <h3 class="foot">&copy; Developer Tohid</h3>
+        </footer>
+    </body>
+</html>
